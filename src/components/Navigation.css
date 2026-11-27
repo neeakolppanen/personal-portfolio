@@ -1,0 +1,57 @@
+.navigation {
+    position: relative;
+    z-index: 2;
+
+    width: 420px;
+    min-height: 420px;
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+
+    background: rgba(38, 36, 43, 0.60);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(180, 130, 220, 0.18);
+    box-shadow: 0 0 60px rgba(110, 0, 180, 0.12);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.brand {
+    
+    color: white;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #dedbe3;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c77aff;
+    text-shadow: 0 0 15px #a000ff;
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        width: min(85vw, 420px);
+        min-height: min(85vw, 420px);
+        padding: 25px;
+    }
+}
