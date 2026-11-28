@@ -1,19 +1,24 @@
-
 import "./Navigation.css";
 
 function Navigation() {
-    return (
-        <nav className="navigation">
-            <div className="brand">
-                NEEA CAMILLA
-            </div>
+  return (
+    <header className="navbar-wrapper">
+      <nav className="navbar" aria-label="Päänavigaatio">
+        <a href="#top" className="brand">
+          NEEA CAMILLA
+        </a>
 
-            <div className="nav-links">
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Yhteystiedot</a>
-            </div>
-        </nav>
-    );
+        <ul className="nav-links">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#yhteystiedot">Yhteystiedot</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Navigation;
